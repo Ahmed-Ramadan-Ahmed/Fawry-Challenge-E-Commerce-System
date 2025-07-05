@@ -1,0 +1,14 @@
+E:\Fawry Quantum Internship\Fawry Task\bin\Debug\net8.0\Fawry Task.exe
+E:\Fawry Quantum Internship\Fawry Task\bin\Debug\net8.0\Fawry Task.deps.json
+E:\Fawry Quantum Internship\Fawry Task\bin\Debug\net8.0\Fawry Task.runtimeconfig.json
+E:\Fawry Quantum Internship\Fawry Task\bin\Debug\net8.0\Fawry Task.dll
+E:\Fawry Quantum Internship\Fawry Task\bin\Debug\net8.0\Fawry Task.pdb
+E:\Fawry Quantum Internship\Fawry Task\obj\Debug\net8.0\Fawry Task.GeneratedMSBuildEditorConfig.editorconfig
+E:\Fawry Quantum Internship\Fawry Task\obj\Debug\net8.0\Fawry Task.AssemblyInfoInputs.cache
+E:\Fawry Quantum Internship\Fawry Task\obj\Debug\net8.0\Fawry Task.AssemblyInfo.cs
+E:\Fawry Quantum Internship\Fawry Task\obj\Debug\net8.0\Fawry Task.csproj.CoreCompileInputs.cache
+E:\Fawry Quantum Internship\Fawry Task\obj\Debug\net8.0\Fawry Task.dll
+E:\Fawry Quantum Internship\Fawry Task\obj\Debug\net8.0\refint\Fawry Task.dll
+E:\Fawry Quantum Internship\Fawry Task\obj\Debug\net8.0\Fawry Task.pdb
+E:\Fawry Quantum Internship\Fawry Task\obj\Debug\net8.0\Fawry Task.genruntimeconfig.cache
+E:\Fawry Quantum Internship\Fawry Task\obj\Debug\net8.0\ref\Fawry Task.dll
