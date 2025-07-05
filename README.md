@@ -178,4 +178,6 @@ The system includes comprehensive examples covering:
 - **Default Shipping Rate**: is $5.00 per kg.
 - **Shipping**: Calculated by total weight × rate per kg
 
-## Output:
+## Output Screens:
+![Screen 1](https://github.com/Ahmed-Ramadan-Ahmed/Fawry-Challenge-E-Commerce-System/blob/main/output1.png?raw=true)
+![Screen 2](https://github.com/Ahmed-Ramadan-Ahmed/Fawry-Challenge-E-Commerce-System/blob/main/output2.png?raw=true)
