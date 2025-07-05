@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Fawry_Task.Models
 {
     // products that may got expired 
-    internal class PerishableProduct : Product, IShippable
+    internal class ExpirableProduct : Product, IShippable
     {
         public DateTime ExpirationDate { get; set; }
         public double Weight { get; set; }
@@ -17,7 +17,7 @@ namespace Fawry_Task.Models
         public override double GetWeight() => Weight;
         public string GetName() => Name;
 
-        public PerishableProduct(string name, decimal price, int quantity, DateTime expirationDate, double weight)
+        public ExpirableProduct(string name, decimal price, int quantity, DateTime expirationDate, double weight)
             : base(name, price, quantity)
         {
             ExpirationDate = expirationDate;
