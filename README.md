@@ -2,25 +2,10 @@
 # Fawry Quantum Internship Challenge 2025 - C# based Solution
 Fawry Rise Journey - Full Stack Development Internship Challenge
 
-### Core Functionality
-- **Product Management**: Define products with name, price, and quantity
-- **Expiration Handling**: Support for perishable products with expiration dates
-- **Shipping Service**: Seamless shipping for physical products with weight-based calculations
-- **Shopping Cart**: Add products in customer carts
-- **Order Processing**: Complete checkout with validation and payment processing
-- **Inventory Management**: Automatic stock updates after successful orders
-
 ### Product Categories
-- **Perishable Products**: Items like cheese and biscuits with expiration dates
+- **Expirable Products**: Items like cheese and biscuits with expiration dates
 - **Shippable Products**: Items like TVs and mobiles that require shipping
 - **Digital Products**: Items like scratch cards that don't require shipping
-
-### Validation & Error Handling
-- Empty cart validation
-- Insufficient balance detection
-- Out-of-stock verification
-- Expired product checking
-- Invalid quantity handling
 
 ## Architecture
 
@@ -30,7 +15,7 @@ The system follows object-oriented design principles with clean abstractions:
 ├── Abstract Classes
 │   └── Product (base class for all products)
 ├── Concrete Products
-│   ├── PerishableProduct (expires + ships)
+│   ├── ExpirableProduct (expires + ships)
 │   ├── ShippableProduct (ships only)
 │   └── DigitalProduct (no shipping)
 ├── Core Classes
@@ -56,7 +41,7 @@ The system follows object-oriented design principles with clean abstractions:
 
 ```csharp
 // Create products
-var cheese = new PerishableProduct("Cheese", 15.99m, 10, DateTime.Now.AddDays(7), 0.5);
+var cheese = new ExpirableProduct("Cheese", 15.99m, 10, DateTime.Now.AddDays(7), 0.5);
 var tv = new ShippableProduct("Smart TV", 599.99m, 5, 15.0);
 var scratchCard = new DigitalProduct("Mobile Scratch Card", 10.00m, 100);
 
@@ -96,11 +81,11 @@ Total package weight 1.2 kg
 
 ## Product Types
 
-### PerishableProduct
+### ExpirableProduct
 Products that expire and require shipping.
 
 ```csharp
-var milk = new PerishableProduct(
+var milk = new ExpirableProduct(
     name: "Fresh Milk",
     price: 3.50m,
     quantity: 20,
@@ -110,7 +95,7 @@ var milk = new PerishableProduct(
 ```
 
 ### ShippableProduct
-Non-perishable products that require shipping.
+Non-ExpirableProduct products that require shipping.
 
 ```csharp
 var laptop = new ShippableProduct(
