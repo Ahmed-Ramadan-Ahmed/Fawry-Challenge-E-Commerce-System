@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Fawry_Task.Models
 {
-    // Non-perishable products that require shipping
+    // Non-expirable products that require shipping
     internal class ShippableProduct : Product, IShippable
     {
         public double Weight { get; set; }
