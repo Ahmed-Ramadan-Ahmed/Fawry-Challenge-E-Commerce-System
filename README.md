@@ -1,5 +1,5 @@
 # Link to Java-based Solution: [Link](https://github.com/Ahmed-Ramadan-Ahmed/Fawry-Challenge-E-Commerce-System-Java)
-# Fawry-Challenge-E-Commerce-System
+# Fawry Challenge C#-based Solution
 Fawry Rise Journey - Full Stack Development Internship Challenge
 
 ### Core Functionality
