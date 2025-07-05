@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Fawry_Task.Models
 {
-    // products that may got expired 
+    // products that may got expired (expire + shipped)
     internal class ExpirableProduct : Product, IShippable
     {
         public DateTime ExpirationDate { get; set; }
