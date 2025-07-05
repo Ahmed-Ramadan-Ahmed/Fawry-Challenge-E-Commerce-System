@@ -53,24 +53,6 @@ The system follows object-oriented design principles with clean abstractions:
 - .NET 6.0 or later
 - C# development environment (Visual Studio, VS Code, etc.)
 
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/ecommerce-system.git
-cd ecommerce-system
-```
-
-2. Build the project:
-```bash
-dotnet build
-```
-
-3. Run the application:
-```bash
-dotnet run
-```
-
 ## 📖 Usage
 
 ### Basic Example
@@ -195,19 +177,5 @@ The system includes comprehensive examples covering:
 - **Expiration**: Checked against current system time
 - **Default Shipping Rate**: is $5.00 per kg.
 - **Shipping**: Calculated by total weight × rate per kg
-
-## 🧪 Testing
-
-The system includes 9 test scenarios:
-
-```bash
-dotnet run
-```
-
-This will execute all test cases and display results, including:
-- Success scenarios
-- Error conditions
-- Edge cases
-- Integration tests
 
 ## Output:
