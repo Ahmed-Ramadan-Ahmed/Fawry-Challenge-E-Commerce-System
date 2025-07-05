@@ -15,8 +15,8 @@ namespace Fawry_Task
             var ecommerceSystem = new ECommerceSystem(shippingService, calculateShippingFeesService , shippingRatePerKg);
 
             // Create products
-            var cheese = new PerishableProduct("Cheese", 15.99m, 10, DateTime.Now.AddDays(7), 0.5);
-            var biscuits = new PerishableProduct("Biscuits", 8.50m, 20, DateTime.Now.AddDays(-1), 0.3); // Expired
+            var cheese = new ExpirableProduct("Cheese", 15.99m, 10, DateTime.Now.AddDays(7), 0.5);
+            var biscuits = new ExpirableProduct("Biscuits", 8.50m, 20, DateTime.Now.AddDays(-1), 0.3); // Expired
             var tv = new ShippableProduct("TV", 599.99m, 5, 15.0);
             var mobile = new ShippableProduct("Smartphone", 799.99m, 8, 0.2);
             var scratchCard = new DigitalProduct("Mobile Scratch Card", 10.00m, 100);
