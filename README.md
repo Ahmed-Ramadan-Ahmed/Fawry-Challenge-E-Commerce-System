@@ -1,12 +1,10 @@
 # Fawry-Challenge-E-Commerce-System
 Fawry Rise Journey - Full Stack Development Internship Challenge
 
-## ✨ Features
-
 ### Core Functionality
 - **Product Management**: Define products with name, price, and quantity
 - **Expiration Handling**: Support for perishable products with expiration dates
-- **Shipping Integration**: Seamless shipping for physical products with weight-based calculations
+- **Shipping Service**: Seamless shipping for physical products with weight-based calculations
 - **Shopping Cart**: Add products in customer carts
 - **Order Processing**: Complete checkout with validation and payment processing
 - **Inventory Management**: Automatic stock updates after successful orders
@@ -23,7 +21,7 @@ Fawry Rise Journey - Full Stack Development Internship Challenge
 - Expired product checking
 - Invalid quantity handling
 
-## 🏗️ Architecture
+## Architecture
 
 The system follows object-oriented design principles with clean abstractions:
 
@@ -47,13 +45,11 @@ The system follows object-oriented design principles with clean abstractions:
     └── CalculateShippingFeesService
 ```
 
-## 🚀 Getting Started
-
 ### Prerequisites
 - .NET 6.0 or later
 - C# development environment (Visual Studio, VS Code, etc.)
 
-## 📖 Usage
+## Usage
 
 ### Basic Example
 
@@ -97,7 +93,7 @@ Shipping 3 items:
 Total package weight 1.2 kg
 ```
 
-## 📦 Product Types
+## Product Types
 
 ### PerishableProduct
 Products that expire and require shipping.
@@ -135,29 +131,14 @@ var license = new DigitalProduct(
 );
 ```
 
-### Product Classes
+### Assumptions
+- **Currency**: All prices in USD
+- **Weight Units**: Kilograms
+- **Expiration**: Checked against current system time
+- **Default Shipping Rate**: is $5.00 per kg.
+- **Shipping**: Calculated by total weight × rate per kg
 
-#### Product (Abstract)
-- `string Name` - Product name
-- `decimal Price` - Product price
-- `int Quantity` - Available quantity
-- `bool RequiresShipping` - Whether product needs shipping
-- `bool IsExpired` - Whether product has expired
-- `double GetWeight()` - Product weight in kg
-- `bool IsAvailable(int quantity)` - Check availability
-
-#### Customer
-- `string Name` - Customer name
-- `decimal Balance` - Customer balance
-- `List<CartItem> Cart` - Shopping cart items
-- `void AddToCart(Product product, int quantity)` - Add item to cart
-- `void ClearCart()` - Empty the cart
-
-#### ECommerceSystem
-- `ECommerceSystem(IShippingService service, decimal shippingRate = 5.0m)` - Constructor
-- `void Checkout(Customer customer)` - Process customer checkout
-
-## 📋 Examples
+## Examples
 
 The system includes comprehensive examples covering:
 
@@ -170,13 +151,6 @@ The system includes comprehensive examples covering:
 7. **Heavy Items** - Large orders with shipping calculations
 8. **Duplicate Products** - Adding same item multiple times
 9. **Digital Only** - Orders without shipping
-
-### Assumptions
-- **Currency**: All prices in USD
-- **Weight Units**: Kilograms
-- **Expiration**: Checked against current system time
-- **Default Shipping Rate**: is $5.00 per kg.
-- **Shipping**: Calculated by total weight × rate per kg
 
 ## Output Screens:
 ![Screen 1](https://github.com/Ahmed-Ramadan-Ahmed/Fawry-Challenge-E-Commerce-System/blob/main/output1.png?raw=true)
